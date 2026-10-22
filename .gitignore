@@ -1,0 +1,24 @@
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+
+# Node / Next.js (once the app is added)
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# setup.js backup of a previous .env.local
+.env.local.bak
+*.bak
+progress.sql
