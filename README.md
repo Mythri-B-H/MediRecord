@@ -76,20 +76,6 @@ MediRecord/
 - **Auth:** JWT (httpOnly cookie) + bcrypt password hashing, three roles
 - **Version Control:** Git + GitHub
 
-## Project Status
-
-- [x] Problem statement, objectives, scope, functional requirements
-- [x] ER diagram and relational schema
-- [x] MySQL DDL implemented and verified against a live database
-- [x] Advanced database features (triggers, stored procedure, views, transactions)
-- [x] MongoDB collection (text search, aggregation)
-- [x] Next.js frontend + API layer (Admin / Doctor / Receptionist dashboards)
-- [x] End-to-end database integration (MySQL + MongoDB from the same app)
-- [x] Authentication/authorization (JWT + bcrypt, 3 roles, server-side enforcement)
-- [x] Demo data + demonstration script
-- [ ] Application screenshots added to the documentation
-- [ ] Formal test cases / testing results added to the documentation
-
 
 ```
 MYSQL_HOST=localhost
