@@ -1,7 +1,6 @@
-# MediRecord — Intelligent Clinical Records & Symptom-Similarity Search System
+# MediRecord : Intelligent Clinical Records & Symptom-Similarity Search System
 
-**DBMS Experiential Learning — Level 3 Project**
-**Option 1: SQL + NoSQL (MySQL + MongoDB)**
+**SQL + NoSQL (MySQL + MongoDB)**
 
 | Name | SRN |
 |---|---|
@@ -27,7 +26,7 @@ node scripts/setup.js      # asks for DB passwords, builds both databases, write
 npm run dev                # http://localhost:3000
 ```
 
-Or step by step:
+step by step:
 
 ```bash
 mysql -u root -p < sql/ddl_schema_mysql.sql
@@ -45,9 +44,6 @@ MediRecord/
 ├── README.md
 ├── setup.bat / start.bat / reset-demo-data.bat   # Windows one-click helpers
 ├── docs/
-│   ├── MediRecord_Final_Documentation.docx       # Full project documentation
-│   ├── MediRecord_Final_Documentation.pdf
-│   ├── DEMO_GUIDE.md                             # Step-by-step demonstration script
 │   └── mysql_execution_screenshots/              # Evidence of DDL run against live MySQL
 ├── diagrams/
 │   ├── ER_Diagram.png                            # Relational-notation ER diagram
@@ -80,23 +76,6 @@ MediRecord/
 - **Auth:** JWT (httpOnly cookie) + bcrypt password hashing, three roles
 - **Version Control:** Git + GitHub
 
-## Project Status
-
-- [x] Problem statement, objectives, scope, functional requirements
-- [x] ER diagram and relational schema
-- [x] MySQL DDL implemented and verified against a live database
-- [x] Advanced database features (triggers, stored procedure, views, transactions)
-- [x] MongoDB collection (text search, aggregation)
-- [x] Next.js frontend + API layer (Admin / Doctor / Receptionist dashboards)
-- [x] End-to-end database integration (MySQL + MongoDB from the same app)
-- [x] Authentication/authorization (JWT + bcrypt, 3 roles, server-side enforcement)
-- [x] Demo data + demonstration script
-- [ ] Application screenshots added to the documentation
-- [ ] Formal test cases / testing results added to the documentation
-
-## Environment Variables
-
-Read from `web/.env.local` (gitignored — never commit real credentials). `scripts/setup.js` writes it for you; the template is `web/.env.local.example`:
 
 ```
 MYSQL_HOST=localhost
